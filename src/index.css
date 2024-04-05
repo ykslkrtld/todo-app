@@ -3,11 +3,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.completed {
-  text-decoration: line-through;
-}
-
-.completed-icon {
-  color: green;
-}

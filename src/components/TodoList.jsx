@@ -25,11 +25,11 @@ const TodoList = ({addList, setAddList}) => {
       <ul>
         {
           addList.map((item) => (
-            <li key={item.id} className="d-flex justify-content-between align-items-center bg-warning m-auto mt-3 w-50 p-2 rounded-5">
-              <span className={`mx-3 ${item.completed ? "completed" : ""}`}>{item.text}</span>
+            <li key={item.id} className={`d-flex justify-content-between align-items-center bg-warning m-auto mt-3 w-50 p-2 rounded-5 ${item.completed ? "bg-danger" : ""}`}>
+              <span className={`mx-3 ${item.completed ? "text-decoration-line-through" : ""}`}>{item.text}</span>
               <div>
               <div className="d-flex">
-              <i onClick={() => handleCompleted(item.id)} className= {`fa-regular fa-thumbs-up mx-2 ${item.completed ? "completed-icon" : ""}`} ></i>
+              <i onClick={() => handleCompleted(item.id)} className= {`fa-regular fa-thumbs-up mx-2 ${item.completed ? "text-success" : ""}`} ></i>
               <i onClick={() => handleDelete(item.id)} className= "fa-solid fa-trash mx-2"></i>
             </div>
               </div>
