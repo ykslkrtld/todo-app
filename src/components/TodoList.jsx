@@ -21,7 +21,7 @@ const TodoList = ({addList, setAddList}) => {
 
   return (
     <div>
-      <h2 className="text-center">Todos</h2>
+      <h2 className="text-center my-4">Todos</h2>
       <ul>
         {
           addList.map((item) => (

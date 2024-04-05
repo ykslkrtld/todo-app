@@ -21,17 +21,18 @@ const Header = ({addList, setAddList}) => {
   };
 
   return (
-    <div>
-      <h1 className="text-center">Todo App</h1>
-      <InputGroup className="mb-3 w-50 m-auto">
+    <div className="mt-5 mb-2">
+      <h1 className="text-center mb-4">Todo App</h1>
+      <InputGroup className="mb-3 w-75 m-auto">
         <Form.Control
           placeholder="Enter new todo"
           value={todo}
           onChange={(e) => handleChange(e)}
+          className="w-75"
         />
         <Button
           id="basic-addon2"
-          className="bg-success"
+          className="bg-success w-25"
           onClick={handleAddList}
         >
           Add Todo
