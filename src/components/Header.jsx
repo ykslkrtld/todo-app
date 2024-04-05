@@ -34,6 +34,8 @@ const Header = ({addList, setAddList}) => {
           id="basic-addon2"
           className="bg-success w-25"
           onClick={handleAddList}
+          disabled= {!todo.trim()}
+
         >
           Add Todo
         </Button>
